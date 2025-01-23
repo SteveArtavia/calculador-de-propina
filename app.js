@@ -9,7 +9,7 @@ const ingresarMonto = () => {
         return;
     }else{
         monto = parseFloat(document.getElementById('monto').value);
-        agregarTexto('#montoAgregado', `<p>Monto agregado:</p> <span>$${monto}</span>`);
+        agregarTexto('#montoAgregado', `<p>Monto:</p> <span>$${monto}</span>`);
     }
 
     document.getElementById('monto').value = '';
@@ -28,7 +28,7 @@ function agregarPropina(){
     botones.forEach(boton => {
         boton.addEventListener('click', function(){
             propina = parseInt(boton.getAttribute('value'));
-            agregarTexto('#propinaSeleccionada', `${propina}%`);
+            agregarTexto('#propinaSeleccionada', `<p>Propina:</p><span>${propina}%</span>`);
             return propina;
         })
     })

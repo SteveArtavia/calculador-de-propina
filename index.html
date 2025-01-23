@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
@@ -15,20 +17,21 @@
             <div id="propinaSeleccionada"><p>Propina:</p></div>  
         </div>
 
-        <label for="">Ingresa el monto a pagar:</label><br>
-        <input type="text" id="monto"><br>
-        <button onclick="ingresarMonto();">ingresar monto</button>
+        <div class="monto-container">
+            <label for="">Ingresa el monto a pagar:</label><br>
+            <input type="text" id="monto"><br>
+            <button class="btn-terciario" onclick="ingresarMonto();">ingresar monto</button><br>
+        </div>
 
         <div class="propina-container">
             <p>Selecciona tu propina</p>
-            <button class="btnPropina"  value="5">5%</button>
-            <button class="btnPropina"  value="10">10%</button>
-            <button class="btnPropina"  value="20">20%</button>
+            <div>
+                <button class="btnPropina btn-secundario" value="5">5%</button>
+                <button class="btnPropina btn-secundario" value="10">10%</button>
+                <button class="btnPropina btn-secundario" value="20">20%</button>
+            </div><br>
 
-            <br><br>
-
-            <button onclick="calcularPropina();">calcular propina</button>
-            <div id="resultado"></div>
+            <button id="calcularPropinaBtn" onclick="calcularPropina();">calcular propina</button>
         </div>
     </div>
 
