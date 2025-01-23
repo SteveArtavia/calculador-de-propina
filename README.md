@@ -1,4 +1,4 @@
-<h1>Calculador de propinas</h1>
+## Calculador de propinas
 <p>Una sencilla aplicación web para calcular la propina ideal y el total a pagar. </p>
 
 # Caracteristicas
