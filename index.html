@@ -9,13 +9,18 @@
 <body>
     
     <div class="container">
+
+        <div class="displayResultado">
+            <div id="montoAgregado"><p>Monto:</p></div>
+            <div id="propinaSeleccionada"><p>Propina:</p></div>  
+        </div>
+
         <label for="">Ingresa el monto a pagar:</label><br>
-        <input type="text" id="monto">
-        <h4 id="montoAgregado"></h4>
-        <button onclick="ingresarMonto();">ingresar monto</button><br><br>
+        <input type="text" id="monto"><br>
+        <button onclick="ingresarMonto();">ingresar monto</button>
 
         <div class="propina-container">
-            <h2 id="propinaSeleccionada"></h2>
+            <p>Selecciona tu propina</p>
             <button class="btnPropina"  value="5">5%</button>
             <button class="btnPropina"  value="10">10%</button>
             <button class="btnPropina"  value="20">20%</button>

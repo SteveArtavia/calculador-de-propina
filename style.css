@@ -2,3 +2,26 @@ body{
     background-color: black;
     color: white;
 }
+.displayResultado{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid white;
+    height: 10em;
+    width: 20em;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 40%;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+}
+span{
+    font-size: 2em;
+}

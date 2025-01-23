@@ -3,9 +3,16 @@ let monto = 0;
 let resultado = 0;
 
 const ingresarMonto = () => {
-    monto = parseFloat(document.getElementById('monto').value);
+
+    if(document.getElementById('monto').value === ''){
+        alert('Debes agregar un monto');
+        return;
+    }else{
+        monto = parseFloat(document.getElementById('monto').value);
+        agregarTexto('#montoAgregado', `<p>Monto agregado:</p> <span>$${monto}</span>`);
+    }
+
     document.getElementById('monto').value = '';
-    agregarTexto('#montoAgregado', `Monto agregado: $${monto}`);
     return monto;
 }
 //Ingresar monto con tecla Enter
