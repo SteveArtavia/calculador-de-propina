@@ -10,6 +10,7 @@ const ingresarMonto = () => {
     }else{
         monto = parseFloat(document.getElementById('monto').value);
         agregarTexto('#montoAgregado', `<p>Monto:</p> <span>$${monto}</span>`);
+        agregarTexto("#resultado", '');
     }
 
     document.getElementById('monto').value = '';
@@ -35,9 +36,9 @@ function agregarPropina(){
 }
 agregarPropina();
 
-function calcularPropina(){
+function calcularTotal(){
     resultado = monto * (propina / 100);
-    agregarTexto('#resultado', `Debes dar una propina de $${resultado}`)
+    agregarTexto('#resultado', `Total con propina de ${propina}%: <br><span>$${resultado + monto}</span>`)
     return resultado;
 }
 

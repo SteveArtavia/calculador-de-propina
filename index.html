@@ -13,8 +13,11 @@
     <div class="container">
 
         <div class="displayResultado">
-            <div id="montoAgregado"><p>Monto:</p></div>
-            <div id="propinaSeleccionada"><p>Propina:</p></div>  
+            <div class="display-container">
+                <div id="montoAgregado"><p>Monto:</p></div>
+                <div id="propinaSeleccionada"><p>Propina:</p></div>
+            </div><br>
+            <div id="resultado"></div>
         </div>
 
         <div class="monto-container">
@@ -31,7 +34,7 @@
                 <button class="btnPropina btn-secundario" value="20">20%</button>
             </div><br>
 
-            <button id="calcularPropinaBtn" onclick="calcularPropina();">calcular propina</button>
+            <button id="calcularTotalBtn" onclick="calcularTotal();">calcular total</button>
         </div>
     </div>
 
