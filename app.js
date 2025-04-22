@@ -14,10 +14,12 @@ const ingresarMonto = () => {
     }
 
     document.getElementById('monto').value = '';
+
+    document.getElementById('monto').blur();
+
     return monto;
 }
 
-document.getElementById('monto').blur();
 
 //Ingresar monto con tecla Enter
 document.getElementById('monto').addEventListener('keydown', (event) => {
