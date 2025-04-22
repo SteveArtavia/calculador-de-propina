@@ -16,6 +16,9 @@ const ingresarMonto = () => {
     document.getElementById('monto').value = '';
     return monto;
 }
+
+document.getElementById('monto').blur();
+
 //Ingresar monto con tecla Enter
 document.getElementById('monto').addEventListener('keydown', (event) => {
     if(event.key === 'Enter'){
