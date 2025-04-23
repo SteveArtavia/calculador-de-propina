@@ -114,4 +114,10 @@ input:focus{
         border-radius: 0 !important;
         padding-top: 0 !important;
     }
+    button{
+        padding: 2rem !important;
+    }
+    .btn-terciario{
+        border-radius: 3rem;
+    }
 }
