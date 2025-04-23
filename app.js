@@ -1,21 +1,23 @@
 let propina = 0;
 let monto = 0;
 let resultado = 0;
+let inputMonto = document.getElementById('monto');
 
 const ingresarMonto = () => {
 
-    if(document.getElementById('monto').value === ''){
+    if(inputMonto.value === ''){
         alert('Debes agregar un monto');
         return;
-    }else{
-        monto = parseFloat(document.getElementById('monto').value);
+
+    } else {
+        monto = parseFloat(inputMonto.value);
         agregarTexto('#montoAgregado', `<p>Monto:</p> <span>$${monto}</span>`);
         agregarTexto("#resultado", '');
     }
 
-    document.getElementById('monto').value = '';
+    inputMonto.value = '';
 
-    document.getElementById('monto').blur();
+    inputMonto.blur();
 
     return monto;
 }
@@ -39,6 +41,7 @@ function agregarPropina(){
         })
     })
 }
+
 agregarPropina();
 
 function calcularTotal(){
